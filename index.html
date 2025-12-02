@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniversário do Bernardo - 7 Anos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      /* Custom Animations for that 'Card Reveal' feel */
+      @keyframes slideInUp {
+        from { transform: translateY(50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 20px rgba(250, 204, 21, 0.5); }
+        50% { box-shadow: 0 0 40px rgba(250, 204, 21, 0.8); }
+      }
+      .font-sports { font-family: 'Anton', sans-serif; }
+      .font-condensed { font-family: 'Oswald', sans-serif; }
+      .animate-slide-up { animation: slideInUp 0.8s ease-out forwards; }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+      .animate-glow { animation: pulse-glow 2s infinite; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-blue-950 text-white overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
